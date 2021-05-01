@@ -1,7 +1,7 @@
 # IoT-Liquid-Sensor
 Uses the CubeCell board and LoRa to detect if a hand sanitizer station is empty
-and then comunicates this information to another board which posts it to a user
-friendly html page.
+and then comunicates this information to a receiver which is conneted to thwe internet 
+via wifi. A friebase page creates a user friendly interface to read the sensor data
 
 CubeCell LoRa development board:
 https://heltec.org/project/htcc-ab01/
