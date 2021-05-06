@@ -122,8 +122,8 @@ void onWakeUp()
   lowpower=0;
   digitalWrite(Vext,LOW); //Turn sensor on
   delay(1000); //Allow time for sensor to power on
-  
-  if(digitalRead(SENSOR_DATA)==HIGH){
+  //If tank is empty, send message
+  if(digitalRead(SENSOR_DATA)==LOW){
     sendMessage();
     delay(1000); //allow message to have time to send
     Radio.Sleep();
